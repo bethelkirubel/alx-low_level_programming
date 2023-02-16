@@ -1,30 +1,12 @@
-#!/bin/bash
 #include <studio.h>
-
-
-/*
- *File: 4-puts.c
- * Author: Bethel Kirubel <bethelki@gmail.com>
- *
- */
-
-#include <studio.h>
-
 /**
-*   printing a  sentence 
+*   main - Entry point 
 *                  
-*   return Always: 0.
+*   Return Always: 0 (Success)
 *
 */
-
 int main(void)
-
-
 {
-
-puts ("\"Programming is like building a multilingual puzzle\n);
- 
-return(0);
-
-
+puts("\"Programming is like building a multilingual puzzle\n");
+return (0);
 } 
