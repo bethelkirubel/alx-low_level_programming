@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 
-/* betty-doc.pl */
+/* main - use betty-doc.pl */
 
 int main(void)
 {
