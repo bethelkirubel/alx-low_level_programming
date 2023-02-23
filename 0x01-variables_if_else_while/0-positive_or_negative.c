@@ -6,6 +6,8 @@
  * Return: Always 0 (Success)
  */
 
+/* betty-doc.pl */
+
 int main(void)
 {
 	int n;
