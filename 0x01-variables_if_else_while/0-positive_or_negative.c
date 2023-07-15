@@ -27,10 +27,9 @@ int main(void)
 		 (0)
 
 	{
-		printf("%d is 0\n", n);
+		printf("%d is zero\n", n);
 	}
-
-        if 
+if
 		(n < 0)
 
 	{
