@@ -23,14 +23,14 @@ int main(void)
 		printf("%d is positive\n", n);
 	}
 
-	else
-		(n = 0);
+	else if
+		 (0)
 
 	{
 		printf("%d is 0\n", n);
 	}
 
-	else
+        if 
 		(n < 0)
 
 	{
