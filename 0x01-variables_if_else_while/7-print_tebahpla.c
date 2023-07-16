@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints all single digit numbers of base 10 starting from 0,
- *        only using putchar and without char variables.
+ * main - Prints the lowercase alphabet in reverse.
  *
  * Return: Always 0.
  */
@@ -11,7 +10,7 @@ int main(void)
 {
 	char c;
 
-	for (c = 'z' ; c <= 'a'; c--)
+	for (c = 'z' ; c >= 'a'; c--)
 		putchar(c);
 	putchar ('\n');
 		return (0);
