@@ -16,14 +16,10 @@ for (num1 = '0' ; num1 <= '8'; num1++)
 {
 		putchar(num1);
 		putchar(num2);
-
-	if ((num1 = num2) || (num1 > num2))
-	{
+putchar(',');
+putchar(' ');
+	while ((num1 = num2) || (num1 > num2))
 		continue;
-	}
-
-	putchar(',');
-	putchar(' ');
 	}
 }
 putchar('\n');
