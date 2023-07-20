@@ -22,7 +22,7 @@ else if (b > a && a > c)
 largest = b;
 }
 else if
-( c > b)
+(c > b)
 {
 largest = c;
 }
