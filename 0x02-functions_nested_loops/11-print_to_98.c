@@ -1,46 +1,31 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_to_98 - print natural number between any passed integer and 98
- * @n: intiger input
+ * print_to_98 - check the the entry to deteminate if is lower or upper
+ *
+ * @n: This is the entry
+ * Return: Always 0.
  */
 
 void print_to_98(int n)
 {
-int i, j;
-
 if (n <= 98)
 {
-for (i = n; i <= 98; i++)
-{
-if (n == 98)
+for (; n <= 97; n++)
 {
 _putchar(n);
-}
-else if (n != 98)
-{
-_putchar (n);
 _putchar(',');
 _putchar(' ');
 }
 }
-}
-else if (n > 98)
+else
 {
-for (j = n; j >= 98; j++)
+for (; n > 98; n--)
 {
-if (n != 98)
-{
-_putchar (n);
-_putchar (',');
-_putchar (' ');
-}
-else if (n == 98)
-{
-_putchar (n);
+_putchar(n);
+_putchar(',');
+_putchar(' ');
 }
 }
-}
-_putchar('\n');
 }
