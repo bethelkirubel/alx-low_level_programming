@@ -15,7 +15,7 @@ if (n <= 0)
 {
 putchar('\n');
 }
-else 
+else
 {
 for (x = 0; x < n; x++)
 {
