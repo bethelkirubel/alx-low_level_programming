@@ -21,16 +21,16 @@ for (x = 0; x < n; x++)
 {
 for (y = 0; y < n; y++)
 {
-if (x > y) 
+if (y == x)
+{
+putchar('\\');
+putchar('\n');
+}
+else if (x > y)
 {
 putchar(' ');
 }
-else if (x == y)
-{
-putchar('\\');
 }
 }
-}
-putchar('\n');
 }
 }
