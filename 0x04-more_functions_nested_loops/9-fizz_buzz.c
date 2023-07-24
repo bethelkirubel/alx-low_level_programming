@@ -2,9 +2,11 @@
 #include "main.h"
 
 /**
- *main - Prints a Fizz Buzz program
+ *main - program that prints either number
+ *or fizz or buzz or fizzBuzz
  *
- * Return: Always 0 (Success)
+ *
+ *Return: returns 0
  */
 
 int main(void)
