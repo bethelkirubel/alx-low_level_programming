@@ -10,8 +10,15 @@
 
 void puts2(char *str)
 {
-int i;
-for (i = 0; i > strlen(str); i += 2)
+int i, len;
+
+len = 0;
+
+while (str[len] != '\0')
+{
+len++;
+}
+for (i = 0; i < len; i += 2)
 {
 putchar(str[i]);
 }
