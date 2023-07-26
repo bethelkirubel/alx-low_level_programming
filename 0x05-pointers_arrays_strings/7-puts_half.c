@@ -27,9 +27,9 @@ int len, n, i;
 	}
 	else
 	{
-		for (n = (len - 1) / 2; n < len ; n++)
+		for (n = (len - 1) / 2; n < len - 1 ; n++)
 		{
-			putchar(str[n]);
+			putchar(str[n + 1]);
 		}
 	}
 	putchar('\n');
