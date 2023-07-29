@@ -37,10 +37,9 @@ else if (s1[i] != s2[i])
 diff = s1[i] - s2[i];
 break;
 }
-else 
+else
 {
 i++;
-break;
 }
 }
 return (diff);
