@@ -27,6 +27,7 @@ for (i = 0; i < ac; i++)
 for (j = 0; av[i][j] != '\0'; j++)
 counter++;
 
+counter++;
 }
 counter++;
 ra = malloc(sizeof(char) * counter);
