@@ -40,7 +40,7 @@ while (i < len1)
 s3[i] = s1[i];
 i++;
 }
-while (i <= len3 && j < len2)
+while (i <= len3)
 {
 s3[i] = s2[j];
 i++;
