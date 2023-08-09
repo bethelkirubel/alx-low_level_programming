@@ -33,7 +33,7 @@ len3 = len1 + len2;
 s3 = malloc(sizeof(char) * len3 + 1);
 
 if (s3 == NULL)
-return (NULL);
+return ("");
 
 while (i < len1)
 {
