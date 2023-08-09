@@ -1,27 +1,25 @@
 #include "main.h"
-#include <stddef.h>
-#include <stdio.h>
-#include <string.h>
 
 /**
- *_strcpy - function that copies the string pointed to by src,
- *including the terminating null byte (\0), to the buffer pointed to by dest.
- *@dest:pointer of table
- *@src:pointer
- *Return: string
+ * *_strcpy - copies a string including the null to a buffer
+ *
+ * @dest: buffer
+ * @src: Points to string
+ *
+ * Return: pointer to @dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
-size_t i, n = strlen(src);
+	int i = 0;
 
-for (i = 0; i < n && src[i] != '\0' && src[i] != 0; i++)
-{
-dest[i] = src[i];
-}
-for (; i < n + 1; i++)
-{
-dest[i] = '\0';
-}
-return (dest);
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+
+	return (dest);
 }
 
