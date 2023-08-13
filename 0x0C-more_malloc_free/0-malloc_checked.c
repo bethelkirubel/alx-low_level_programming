@@ -1,15 +1,20 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * malloc_checked - function should cause normal process termination with a status value of 98
- * @argc: counts arguments
- * @argv: lists argument values
+ * malloc_checked - function should cause termination with a status value of 98
+ * @b: number of block to reserve in malloc
  * Return: pointer of malloc
  */
 void *malloc_checked(unsigned int b)
 {
-ptr = *b;
-b = malloc(unsigned int, * 1);
+void *cat;
+cat = malloc(b);
 
-return (*b);
+if (cat == NULL)
+{
+exit(98);
+}
+return (cat);
 }
