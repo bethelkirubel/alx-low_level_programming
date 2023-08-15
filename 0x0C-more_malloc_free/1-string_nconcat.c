@@ -29,9 +29,10 @@ if (constr == NULL)
 return (NULL);
 
 len = 0;
+
 for (i = 0; s1[i]; i++)
 constr[len++] = s1[i];
-for (i = 0; s2[i] && i <= n; i++)
+for (i = 0; s2[i] && i < n; i++)
 constr[len++] = s2[i];
 
 constr[len] = '\0';
