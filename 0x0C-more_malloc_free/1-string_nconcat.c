@@ -26,7 +26,7 @@ len++;
 constr = malloc(sizeof(char) * (len + 1));
 
 if (constr == NULL)
-constr = "";
+return (NULL);
 
 len = 0;
 for (i = 0; s1[i]; i++)
