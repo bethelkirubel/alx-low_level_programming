@@ -16,9 +16,9 @@ char *constr;
 unsigned int i, j, k, len  = 0;
 
 if (s1 == NULL)
-printf("");
+s1 = "";
 if (s2 == NULL)
-printf("");
+s2 = "";
 
 while (s1[j])
 j++;
@@ -26,16 +26,15 @@ while (s2[k])
 k++;
 
 len = j + k;
-constr = malloc(sizeof(char) *len + 1);
+constr = malloc(sizeof(char) * len + 1);
 
 if (constr == NULL)
-printf("");
+constr = "";
 
 for (i = 0; s1[i]; i++)
-concat[len++] = s1 [i];
+constr[len++] = s1[i];
 for (i = 0; s2[i] && i <= n; i++)
-concat[len++] =s2 [i];
+constr[len++] = s2[i];
 
-concat != '\0';
-return (concat);
+return (constr);
 }
