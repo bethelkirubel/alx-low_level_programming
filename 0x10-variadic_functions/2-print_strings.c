@@ -18,11 +18,14 @@ va_start(num, n);
 for (i = 0; i < n; i++)
 {
 str = va_arg(num, char *);
-printf("%s", str);
 if (str == NULL)
-printf("(nil)");
-if (separator != NULL && i < n - 1)
-printf("%s", separator);
+str = "(nil)";
+if (separator == NULL)
+printf("%s", str);
+if (i == 0 && separator)
+printf("%s", str);
+else
+printf("%s%s", separator, str);
 }
 printf("\n");
 va_end(num);
