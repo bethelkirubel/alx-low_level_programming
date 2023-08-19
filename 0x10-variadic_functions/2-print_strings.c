@@ -20,9 +20,9 @@ for (i = 0; i < n; i++)
 str = va_arg(num, char *);
 if (!str)
 str = "(nil)";
-if (separator == NULL)
+if (!separator)
 printf("%s", str);
-if (i == 0 && separator)
+else if (i == 0 && separator)
 printf("%s", str);
 else
 printf("%s%s", separator, str);
