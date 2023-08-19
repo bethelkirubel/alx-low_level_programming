@@ -20,11 +20,10 @@ for (i = 0; i < n; i++)
 str = va_arg(num, char *);
 printf("%s", str);
 if (str == NULL)
-printf("nil");
+printf("(nil)");
 if (separator != NULL && i < n - 1)
 printf("%s", separator);
 }
-
 printf("\n");
 va_end(num);
 }
