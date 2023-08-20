@@ -20,7 +20,7 @@ if (s[i] == s[k - i - 1])
 c++;
 }
 
-if (c == i)
+if (c == i || k == 0)
 return (1);
 else
 return (0);
