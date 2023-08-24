@@ -13,7 +13,7 @@ while (h != NULL)
 {
 if (h->str == NULL)
 {
-printf("[%d] %s\n", 0, "(nil)");
+printf("[%d] %s\n", 0, "(nill)");
 }
 else
 {
