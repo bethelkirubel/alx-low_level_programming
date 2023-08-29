@@ -22,7 +22,7 @@ if (index == 0)
 free(current);
 return (1);
 }
-for (i = 0; i <= (index - 1); i++)
+for (i = 0; i < (index - 1); i++)
 {
 current = current->next;
 if (!current)
