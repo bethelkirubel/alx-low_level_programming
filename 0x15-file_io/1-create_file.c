@@ -17,17 +17,16 @@ return (-1);
 
 fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 
-if (fd == -1)
+if (fd < 0)
 return (-1);
 
 if (!text_content)
 text_content = "";
 
 for (i = 0; text_content[i]; i++)
-{
+	;
 r = write(fd, text_content, i);
-}
-if (r == -1)
+if (r != i)
 return (-1);
 
 close(fd);
