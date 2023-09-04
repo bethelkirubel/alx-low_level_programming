@@ -27,7 +27,7 @@ if (!buf)
 return (0);
 
 nrd = read(fd, buf, letters);
-nwr = write(1, buf, nrd);
+nwr = write(STDOUT_FILENO, buf, nrd);
 
 close(fd);
 free(buf);
