@@ -23,6 +23,7 @@ return (0);
 buf = malloc(sizeof(char) * letters);
 if (buf == NULL)
 {
+free(buf);
 close(fd);
 return (0);
 }
