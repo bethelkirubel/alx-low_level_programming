@@ -22,12 +22,12 @@ return (0);
 
 buf = malloc(sizeof(char) * letters);
 if (buf == NULL)
-free(buf);
-close(fd);
+
 return (0);
 read2 = read(fd, buf, letters);
 write2 = write(STDOUT_FILENO, buf, read2);
-
+free(buf);
+close(fd);
 return (write2);
 }
 }
