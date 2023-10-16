@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
- *
+ * read_textfile - Reads text
+ * @filename: the name of the file
+ * @letters: number of letters
+ * Return: write2
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -17,25 +20,25 @@ fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
 
-buf = malloc(sizeof(char) *letters);
+buf = malloc(sizeof(char) * letters);
 if (buf == NULL)
 {
-close (fd);
+close(fd);
 return (0);
 }
 read2 = read(fd, buf, letters);
 if (read2 == -1)
 {
-free (buf);
-close (fd);
+free(buf);
+close(fd);
 return (0);
 }
 
 write2 = write(STDOUT_FILENO, buf, read2);
 if (write2 == -1)
 {
-free (buf);
-close (fd);
+free(buf);
+close(fd);
 return (0);
 }
 
