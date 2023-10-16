@@ -4,7 +4,7 @@
  * read_textfile - Reads text
  * @filename: the name of the file
  * @letters: number of letters
- * Return: write2
+ * Return: read2
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -45,7 +45,7 @@ return (0);
 if (read2 != write2)
 return (0);
 
-return (write2);
+return (read2);
 }
 }
 
