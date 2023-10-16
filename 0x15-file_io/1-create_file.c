@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create-file -creates a specific file
+ * create_file -creates a specific file
  * @filename: filename
  * @text_content: null terminated stirng
  * Return: 1 or -1
@@ -27,7 +27,7 @@ if (!text_content)
 text_content = "";
 
 write2 = write(fd, text_content, len);
-if (write2 == -1 || write2 != len)
+if (write2 == -1)
 return (-1);
 
 close(fd);
