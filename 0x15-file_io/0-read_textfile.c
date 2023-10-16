@@ -36,12 +36,6 @@ return (0);
 }
 
 write2 = write(STDOUT_FILENO, buf, read2);
-if (write2 == -1)
-{
-free(buf);
-close(fd);
-return (0);
-}
 
 if (read2 != write2)
 return (0);
