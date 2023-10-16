@@ -22,25 +22,13 @@ return (0);
 
 buf = malloc(sizeof(char) * letters);
 if (buf == NULL)
-{
 free(buf);
 close(fd);
 return (0);
-}
 read2 = read(fd, buf, letters);
-if (read2 == -1)
-{
-free(buf);
-close(fd);
-return (0);
-}
-
 write2 = write(STDOUT_FILENO, buf, read2);
 
-if (read2 != write2)
-return (0);
-
-return (read2);
+return (write2);
 }
 }
 
